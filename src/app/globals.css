@@ -1,0 +1,22 @@
+/* Quita los márgenes por defecto del navegador */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+}
+
+section {
+    scroll-margin-top: 5rem;
+}

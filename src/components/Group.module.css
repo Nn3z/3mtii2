@@ -1,0 +1,180 @@
+.grupoSection {
+    width: 100%;
+    background-color: #ffffff; /* Alternamos a blanco puro para diferenciarlo de la sección anterior */
+    color: #0f172a;
+    padding: 5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.subtitle {
+    color: #610000;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.highlight {
+    color: #610000;
+}
+
+.description {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Subtítulo de proyectos */
+.sectionSub {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 1.5rem 0;
+}
+
+/* Grid de Proyectos */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.06);
+    transform: translateY(-3px);
+}
+
+.materiaTag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #610000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cardTitle {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.cardDesc {
+    font-size: 0.88rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background-color: #ffffff;
+    color: #334155;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+}
+
+/* Banner de Cultura del Grupo */
+.cultureBanner {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cultureText {
+    max-width: 550px;
+}
+
+.cultureText h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #0f172a;
+}
+
+.cultureText p {
+    margin: 0;
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.badgesCol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pill {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    color: #0f172a;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cultureBanner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
