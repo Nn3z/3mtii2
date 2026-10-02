@@ -59,7 +59,7 @@ export default function Hero() {
   carrera: "Tecnologías de la Información",
   integrantes: 35,
   combustible: ["Café de 20 pesos", "Tortitas", "Ansiedad por proyectos"],
-  estadoActual: "Sobreviviendo a cano / genesis / angel"
+  estadoActual: "Sobreviviendo a Cano / Genesis / Angel"
 };`}
                 </code>
               </pre>

@@ -1,47 +1,14 @@
 "use client";
 import { useState } from "react";
 import styles from "./Blog.module.css";
+import { apuntes } from "@/content/post/post-generales.json.js";
 
 export default function BlogApuntes() {
     const [categoria, setCategoria] = useState("Todas");
 
-    const categorias = ["Todas", "Programación", "Redes", "Bases de Datos", "Sistemas"];
+    const categorias = ["Todas", "Programación", "Redes", "Humanidades", "Sistemas", "Eventos"];
 
-    const apuntes = [
-        {
-            titulo: "Lorem ipsum dolor sit amet",
-            categoria: "Lorem ipsum",
-            descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus.",
-            autor: "Comunidad 3MTII2",
-            fecha: "12 Mar",
-            tiempo: "Lorem ipsum dolor sit amet"
-        },
-        {
-            titulo: "Lorem ipsum dolor sit amet",
-            categoria: "Lorem ipsum",
-            descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus.",
-            autor: "Comunidad 3MTII2",
-            fecha: "12 Mar",
-            tiempo: "Lorem ipsum dolor sit amet"
-        },
-        {
-            titulo: "Lorem ipsum dolor sit amet",
-            categoria: "Lorem ipsum",
-            descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus.",
-            autor: "Comunidad 3MTII2",
-            fecha: "12 Mar",
-            tiempo: "Lorem ipsum dolor sit amet"
-        },
-        {
-            titulo: "Lorem ipsum dolor sit amet",
-            categoria: "Lorem ipsum",
-            descripcion: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus.",
-            autor: "Comunidad 3MTII2",
-            fecha: "12 Mar",
-            tiempo: "Lorem ipsum dolor sit amet"
-        }
-    ];
-
+   
     const apuntesFiltrados = categoria === "Todas"
         ? apuntes
         : apuntes.filter(a => a.categoria === categoria);
@@ -56,7 +23,7 @@ export default function BlogApuntes() {
                         Blog & <span className={styles.highlight}>Apuntes</span>
                     </h2>
                     <p className={styles.description}>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales
+                        descubre aprendizajes que llenan de creatividad y conocimiento a nuestro salon
                     </p>
                 </div>
 
@@ -77,16 +44,29 @@ export default function BlogApuntes() {
                 <div className={styles.grid}>
                     {apuntesFiltrados.map((apunte, index) => (
                         <article key={index} className={styles.card}>
-                            <div className={styles.cardHeader}>
+                            {/* Contenedor de la Imagen */}
+                            <div className={styles.imageContainer}>
+                                <img 
+                                    src={apunte.imagen} 
+                                    alt={apunte.titulo} 
+                                    className={styles.cardImage} 
+                                    // Imagen por defecto si la ruta falla o aún no agregas el archivo
+                                    onError={(e)=>{e.target.src = 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop'}}
+                                />
                                 <span className={styles.badge}>{apunte.categoria}</span>
-                                <span className={styles.readTime}>{apunte.tiempo}</span>
                             </div>
-                            <h3 className={styles.cardTitle}>{apunte.titulo}</h3>
-                            <p className={styles.cardDesc}>{apunte.descripcion}</p>
 
-                            <div className={styles.cardFooter}>
-                                <span className={styles.author}>✍️ {apunte.autor}</span>
-                                <span className={styles.date}>{apunte.fecha}</span>
+                            <div className={styles.cardContent}>
+                                <div className={styles.cardHeader}>
+                                    <span className={styles.readTime}>{apunte.tiempo}</span>
+                                </div>
+                                <h3 className={styles.cardTitle}>{apunte.titulo}</h3>
+                                <p className={styles.cardDesc}>{apunte.descripcion}</p>
+
+                                <div className={styles.cardFooter}>
+                                    <span className={styles.author}>✍️ {apunte.autor}</span>
+                                    <span className={styles.date}>{apunte.fecha}</span>
+                                </div>
                             </div>
                         </article>
                     ))}

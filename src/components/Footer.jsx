@@ -24,7 +24,7 @@ export default function Footer() {
                     <ul className={styles.linkList}>
                         <li><Link href="#inicio">Inicio</Link></li>
                         <li><Link href="#carrera">La Carrera</Link></li>
-                        <li><Link href="#grupo">Grupo 0VIT2</Link></li>
+                        <li><Link href="#grupo">Grupo 3MTII2</Link></li>
                         <li><Link href="#blog">Blog & Apuntes</Link></li>
                     </ul>
                 </div>

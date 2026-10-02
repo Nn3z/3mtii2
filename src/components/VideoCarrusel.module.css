@@ -1,0 +1,137 @@
+.carouselContainer {
+  width: 100%;
+  max-width: 900px; /* Ancho grande para que destaque en la página */
+  margin: 3rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carouselTitle {
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Tarjeta principal que envuelve el video grande */
+.mainPlayerCard {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Proporción exacta de video panorámico */
+}
+
+.videoWrapper iframe,
+.videoWrapper video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Botones de navegación laterales grandes */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.navButton:hover {
+  background-color: #610000;
+  border-color: #ffffff;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+/* Caja de información debajo del reproductor */
+.videoInfo {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.videoInfo h4 {
+  font-size: 1.3rem;
+  color: #1f2937;
+  margin: 0;
+}
+
+.videoInfo p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin: 0;
+}
+
+.counter {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+/* Botones selectores de miniatura abajo */
+.thumbnails {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.thumbBtn {
+  background-color: #e5e7eb;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4b5563;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.thumbBtn:hover {
+  background-color: #d1d5db;
+}
+
+.activeThumb {
+  background-color: #610000;
+  color: #ffffff;
+}

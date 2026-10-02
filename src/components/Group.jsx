@@ -1,26 +1,8 @@
 import styles from "./Group.module.css";
+import { proyectos } from "@/content/post/Group";
 
 export default function Grupo() {
-    const proyectos = [
-        {
-            titulo: "Lorem ipsum dolor sit",
-            materia: "Lorem ipsum dolor sit amet",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend",
-            tags: ["Lorem", "Lorem", "Lorem"]
-        },
-        {
-            titulo: "Lorem ipsum dolor sit",
-            materia: "Lorem ipsum dolor sit amet",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend",
-            tags: ["Lorem", "Lorem", "Lorem"]
-        },
-        {
-            titulo: "Lorem ipsum dolor sit",
-            materia: "Lorem ipsum dolor sit amet",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend",
-            tags: ["Lorem", "Lorem", "Lorem"]
-        }
-    ];
+    
 
     return (
         <section id="grupo" className={styles.grupoSection}>
@@ -32,10 +14,9 @@ export default function Grupo() {
                         Conoce al Grupo <span className={styles.highlight}>3MTII2</span>
                     </h2>
                     <p className={styles.description}>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,
+                        El grupo 3MTII2 es un grupo donde se destaca la paciencia, perseverancia y aunque esta carrera esta enfocada mas a las tecnologias y no a lo social, el grupo se enfoca en crecer juntos.
                     </p>
                 </div>
-
                 {/* Tarjetas de Proyectos / Logros */}
                 <div className={styles.projectsSection}>
                     <h3 className={styles.sectionSub}>Lo que hemos construido juntos</h3>
@@ -60,13 +41,13 @@ export default function Grupo() {
                     <div className={styles.cultureText}>
                         <h3>La vida en el 3MTII2</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,
+                            En este salon encontraras ideas y opiniones innovadoras, los estudiantes cuentan con capacidades y habilidades para  afrontar las adversidades que se lleguen  a presentar en las distintas materias que conforman el plan de estudio.
                         </p>
                     </div>
                     <div className={styles.badgesCol}>
-                        <div className={styles.pill}>Lorem ipsum dolor sit amet</div>
-                        <div className={styles.pill}>Lorem ipsum dolor sit amet</div>
-                        <div className={styles.pill}>Lorem ipsum dolor sit amet</div>
+                        <div className={styles.pill}>Paciencia</div>
+                        <div className={styles.pill}>Perseverancia</div>
+                        <div className={styles.pill}>Crecimiento mutuo</div>
                     </div>
                 </div>
             </div>

@@ -1,29 +1,8 @@
 import styles from "./Career.module.css";
+import { pilares } from "@/content/post/Career";
 
 export default function Carrera() {
-    const pilares = [
-        {
-            icono: "❤️",
-            titulo: "Lorem ipsum ",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,"
-        },
-        {
-            icono: "❤️",
-            titulo: "Lorem ipsum ",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,"
-        },
-        {
-            icono: "❤️",
-            titulo: "Lorem ipsum ",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,"
-        },
-        {
-            icono: "❤️",
-            titulo: "Lorem ipsum ",
-            desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,"
-        }
-    ];
-
+    
     return (
         <section id="carrera" className={styles.carreraSection}>
             <div className={styles.container}>
@@ -34,7 +13,7 @@ export default function Carrera() {
                         ¿Qué es <span className={styles.highlight}>T.I.C.</span>?
                     </h2>
                     <p className={styles.description}>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,
+                        
                     </p>
                 </div>
 
@@ -54,14 +33,14 @@ export default function Carrera() {
                     <div className={styles.bannerInfo}>
                         <h3>Campo Laboral de Gran Demanda </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit interdum, auctor proin accumsan nibh sodales eleifend mus, parturient natoque habitant odio vitae nisl risus. Mollis interdum dui quis convallis orci rhoncus per imperdiet sociosqu, est platea augue magnis sed dis senectus faucibus,
+                            Como Ingeniero en Tecnologías de la Información egresado de la UPTex, podrás desempeñarte como desarrollador de backend o frontend, administrador de infraestructura de servidores y redes, especialista en seguridad informática, analista de datos o líder de proyectos tecnológicos en empresas públicas y privadas tanto nacionales como internacionales.
                         </p>
                     </div>
                     <div className={styles.tagGroup}>
-                        <span className={styles.jobTag}>Lorem ipsum</span>
-                        <span className={styles.jobTag}>Lorem ipsum</span>
-                        <span className={styles.jobTag}>Lorem ipsum</span>
-                        <span className={styles.jobTag}>Lorem ipsum</span>
+                        <span className={styles.jobTag}>Python</span>
+                        <span className={styles.jobTag}>Mysql</span>
+                        <span className={styles.jobTag}>CISCO</span>
+                        <span className={styles.jobTag}>JAVA</span>
                     </div>
                 </div>
             </div>
