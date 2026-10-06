@@ -34,6 +34,16 @@ const DETALLES_APUNTES = {
             "/images/projects/obra3.jpeg",
             "/images/projects/obra4.jpeg"
         ]
+    },
+    "pintura_tela": {
+        titulo: "Pintura en Tela",
+        categoria: "Humanidades",
+        fecha: "02 de Abril, 2026",
+        autor: "Comunidad 3MTII2",
+        contenidoPrincipal: "La actividad de pintura en tela permitió a los estudiantes explorar su creatividad y expresar emociones a través del arte. Cada pieza reflejaba la individualidad de su creador, fomentando un ambiente de respeto y apreciación por las diferentes perspectivas artísticas.",
+        galeria: [
+            "/images/projects/pintura1.jpeg"
+        ]
     }
 };
 

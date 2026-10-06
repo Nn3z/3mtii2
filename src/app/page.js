@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import Carrusel from "@/components/VideoCarrusel"
 import { MOCK_VIDEOS } from "@/content/post/Carousel";
 import Comentarios from "@/components/Comentarios";
-
+import Noticias from "@/components/Noticias";
 
 export default function Home() {
     return (
@@ -15,6 +15,7 @@ export default function Home() {
             <section id="videos" className="video-section">
                 <Carrusel videos={MOCK_VIDEOS} />
             </section>
+
             <Career />
             <Group />
             <Blog />
