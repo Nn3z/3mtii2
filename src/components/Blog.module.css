@@ -184,6 +184,12 @@
     color: #64748b;
 }
 
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 /* Banner inferior de colaboración */
 .contributeBox {
     background-color: #ffffff;

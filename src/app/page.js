@@ -5,6 +5,7 @@ import Blog from "@/components/Blog";
 import Footer from "@/components/Footer";
 import Carrusel from "@/components/VideoCarrusel"
 import { MOCK_VIDEOS } from "@/content/post/Carousel";
+import Comentarios from "@/components/Comentarios";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
             <Career />
             <Group />
             <Blog />
+            <Comentarios />
             <Footer />
         </main>
     );

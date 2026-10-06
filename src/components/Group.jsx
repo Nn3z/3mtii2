@@ -14,7 +14,7 @@ export default function Grupo() {
                         Conoce al Grupo <span className={styles.highlight}>3MTII2</span>
                     </h2>
                     <p className={styles.description}>
-                        El grupo 3MTII2 es un grupo donde se destaca la paciencia, perseverancia y aunque esta carrera esta enfocada mas a las tecnologias y no a lo social, el grupo se enfoca en crecer juntos.
+                       El grupo 3MTII2 ha tenido que aprender a base de tropiezos y desvelos. Aunque la ingeniería informática está llena de pantallas, líneas de código y redes complejas más que de convivencia social, aquí cada quien carga con su esfuerzo, y a pesar de las divisiones y los retos diarios, seguimos saliendo adelante y respondiendo con trabajo.
                     </p>
                 </div>
                 {/* Tarjetas de Proyectos / Logros */}
@@ -41,7 +41,7 @@ export default function Grupo() {
                     <div className={styles.cultureText}>
                         <h3>La vida en el 3MTII2</h3>
                         <p>
-                            En este salon encontraras ideas y opiniones innovadoras, los estudiantes cuentan con capacidades y habilidades para  afrontar las adversidades que se lleguen  a presentar en las distintas materias que conforman el plan de estudio.
+                            En este salón encontrarás ideas y opiniones innovadoras; los estudiantes cuentan con capacidades y habilidades para afrontar las adversidades que se lleguen a presentar en las distintas materias que conforman el plan de estudio. A pesar de los retos, las divisiones y los momentos complejos, el 3MTII2 se mantiene como un grupo profundamente trabajador, unido y cumplidor con cada meta académica.
                         </p>
                     </div>
                     <div className={styles.badgesCol}>
