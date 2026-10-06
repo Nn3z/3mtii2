@@ -55,10 +55,10 @@ export default function Carrera() {
                         </p>
                     </div>
                     <div className={styles.tagGroup}>
-                        <span className={styles.jobTag}>Python</span>
-                        <span className={styles.jobTag}>Mysql</span>
-                        <span className={styles.jobTag}>CISCO</span>
-                        <span className={styles.jobTag}>JAVA</span>
+                        <span className={styles.jobTag}>Redes</span>
+                        <span className={styles.jobTag}>Desarrollo de Software</span>
+                        <span className={styles.jobTag}>Data Science</span>
+                        <span className={styles.jobTag}>TI</span>
                     </div>
                 </div>
             </div>
