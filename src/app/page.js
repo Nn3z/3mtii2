@@ -15,7 +15,7 @@ export default function Home() {
             <section id="videos" className="video-section">
                 <Carrusel videos={MOCK_VIDEOS} />
             </section>
-
+            <Noticias />
             <Career />
             <Group />
             <Blog />

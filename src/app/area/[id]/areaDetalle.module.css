@@ -1,0 +1,136 @@
+.mainContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8fafc;
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.backLink {
+    color: #610000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    align-self: flex-start;
+}
+
+.backLink:hover {
+    text-decoration: underline;
+}
+
+.headerSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.iconBadge {
+    font-size: 2.5rem;
+    background: #f1f5f9;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.headerSection h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.textColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cardBox {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.cardBox h3 {
+    font-size: 1rem;
+    color: #610000;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.cardBox p {
+    color: #334155;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.opinionsList {
+    margin: 0;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.opinionsList li {
+    color: #475569;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.imageColumn {
+    width: 100%;
+}
+
+.imageWrapper {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+}
